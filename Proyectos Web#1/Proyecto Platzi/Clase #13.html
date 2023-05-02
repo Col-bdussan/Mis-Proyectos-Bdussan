@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+    :root{
+    --White: #FFFFFF;
+    --Black: #000000;
+    --very-light-pink: #C7C7C7;
+    --Text-imput-field: #F7F7F7;
+    --Hospital-green: #ACD982;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    }
+    body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    }
+    .product-detail {
+    width: 300px;    
+    padding-bottom: 24px;
+    position: absolute;
+    right: 0;
+    }
+    .product-detail-close {
+    background: var(--White) ;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 2;
+    padding: 12px;
+    border-radius: 50%;
+    }
+    .product-detail-close:hover {
+    cursor: pointer; 
+    }
+    .product-detail >img:nth-child(2) {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+    }
+    .product-info {
+    margin: 24px 24px 0 24px;
+    }
+    .product-info p:nth-child(1) {
+    font-weight: bold;  
+    font-size:var(--md);
+    margin-top: 0;
+    margin-bottom: 4px;  
+    }
+    .product-info p:nth-child(2) {
+    color: var(--very-light-pink);    
+    font-size:var(--md);
+    margin-top: 0;
+    margin-bottom: 36px;  
+    }
+    .product-info p:nth-child(3) {
+    color: var(--very-light-pink);    
+    font-size:var(--sm);
+    margin-top: 0;
+    margin-bottom: 36px;  
+    }
+    .primary-button {
+        background-color: var(--Hospital-green);
+        border-radius: 8px;
+        border: none;
+        color: var(--White);    
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+    }   
+    .add-to-cart-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    }
+    @media (max-width: 640px) {
+    .product-detail  {
+    width: 100%;    
+    }  
+    }
+    </style>
+</head>
+<body>
+ <aside class="product-detail">
+    <div class="product-detail-close">
+    <img src="Iconos/Iconos/icon_close.png" alt="close">
+    </div>
+    <img src="https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="moto">
+     <div class="product-info">
+        <p>$100.000</p>
+        <p>Moto Z1000</p>
+        <p>Ficha técnica Kawasaki Z1000
+            MOTOR	
+            Tipo de motor	Refrigeración líquida, 4 tiempos, cuatro cilindro en línea
+            Cilindrada	1.043 cm³
+            Diámetro x carrera	77 x 56 mm
+            Relación de compresión	11.8:1</p>
+         <button class="primary-button add-to-cart-button">
+            <img src="Iconos/Iconos/bt_add_to_cart.svg" alt="add to cart">
+            Add to cart
+         </button>   
+     </div>
+
+ </aside>   
+</body>
+</html>
